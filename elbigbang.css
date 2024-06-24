@@ -1,0 +1,78 @@
+body{
+    background-image: url('img/fondobigbang.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+}
+
+h1{
+    background-image: url('img/FONDO.png');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: aqua;
+}
+
+p{
+    color: white;
+    background-image: url('img/FONDO.png');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation: imagen 2s backwards linear
+}
+
+/*Estilos para la animacion de la imagen*/
+@keyframes imagen{
+    0%{
+        transform: translate(-300px);
+    }
+    50%{ 
+        transform: translate(-150px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+/*Estilo para el boton flotante*/
+.flotante {
+    display: fixed;
+    bottom: 0px;
+    position: fixed;
+    text-align: center;
+ }
+
+/*Estilos para la linea horizontal*/
+hr {
+    border:1px solid cyan;
+  }
+  hr.no-space {
+    margin:0;
+}
+p{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+div{
+    margin: 0;
+}
+.texto{
+    margin: 0;
+}

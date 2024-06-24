@@ -1,0 +1,67 @@
+/*Estilo para el boton flotante*/
+.flotante {
+   display: fixed;
+   bottom: 0px;
+   position: fixed;
+   text-align: center;
+}
+
+body {
+    background-image: url('img/ESPACIO.webp') ;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.fondo {
+    align-items: center;
+}
+
+.inicio {
+    background-image: url('img/FONDO.png') ;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    color: aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.justify {
+    text-align: justify;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.justify, .center{
+    background-image: url('img/FONDO.png');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.animar{
+   view-timeline-name: --image;
+   view-timeline-axis: block;
+   animation-timeline: --image;
+   animation-name: show;
+   animation-delay: 0s;
+   animation-duration: 3s;
+}
+
+@keyframes show {
+    0%, 100%{
+        transform: translate(-300px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+}
+h1,p,hr{
+    margin: 0;
+}
+/*Estilos para la linea horizontal*/
+hr {
+    border:1px solid cyan;
+  }

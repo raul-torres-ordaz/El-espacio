@@ -1,0 +1,60 @@
+body{
+    background-image: url('img/fondonebulosa.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    background-image: url('img/FONDO.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+p{
+    text-align: justify;
+    background-image: url('img/FONDO.png');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: white;
+}
+
+p, h1, hr{
+    margin: 0;
+}
+/*Estilos para la linea horizontal*/
+hr {
+    border:1px solid cyan;
+  }
+
+  .img{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-delay: 0s;
+    animation-duration: 3s;
+ }
+ 
+ @keyframes show {
+     0%, 100%{
+         transform: translate(-300px);
+     }
+     50%{
+         transform: translate(0px);
+     }
+ }
+
+/*Estilo para el boton flotante*/
+.flotante {
+    display: fixed;
+    bottom: 0px;
+    position: fixed;
+    text-align: center;
+ }
